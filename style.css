@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+body{
+background-image: linear-gradient(to left, black, rgb(3, 3, 159), rgb(111, 0, 128));
+background-size: 500% 100%;
+animation: degrade-animado 12s infinite alternate ;
+}
+@keyframes degrade-animado{
+    0%{
+        background-position-x: 0% ;
+    }
+    100%{
+        background-position-x:100% ;
+    }
+
+}
+.login{
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(30px);
+    border: 2px solid white;
+    overflow: hidden;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5rem;
+    border-radius: 15px;
+    gap: 15px;
+    box-shadow: 0 0 15px white;
+    
+}
+
+.login input{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.186);
+    padding: 10px;
+    border: none;
+    background-color: 2px solid transparent;
+    border-radius: 5px;
+}
+.login h1{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15px;
+}
